@@ -1,0 +1,100 @@
+.actions {
+  width: 100%;
+  background-color: @light-gray;
+
+  &__wrapper {
+    padding: 20px 15px 0;
+    text-align: center;
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__header {
+    font-size: 32px;
+    line-height: 36px;
+    color: @dark-gray;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 27px;
+    color: @gray-color;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    padding-top: 80px;
+  }
+
+  &__item-header {
+    position: relative;
+    font-size: 18px;
+    line-height: 27px;
+    color: @dark-gray;
+    font-weight: 400;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      left: 92px;
+      width: 100px;
+      height: 100px;
+      background: @light-blue;
+      border-radius: 50%;
+    }
+
+    &--create::after {
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: 123px;
+    width: 46px;
+    height: 46px;
+    background: url(../img/createicon.svg) no-repeat;
+    }
+
+    &--confirm::after {
+      content: "";
+      position: absolute;
+      top: -73px;
+      left: 119px;
+      width: 46px;
+      height: 46px;
+      background: url(../img/confirmIcon.svg) no-repeat;
+    }
+
+    &--result::after {
+      content: "";
+      position: absolute;
+      top: -76px;
+      left: 123px;
+      width: 46px;
+      height: 52px;
+      background: url(../img/resultsIcon.svg) no-repeat;
+    }
+  }
+
+  &__item-description {
+    font-size: 16px;
+    line-height: 27px;
+    color: @gray-color;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+

@@ -1,0 +1,101 @@
+.news {
+  width: 100%;
+  background-color: @white;
+
+  &__wrapper {
+    padding: 0 15px 0;
+    text-align: center;
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  &__header {
+    font-size: 32px;
+    line-height: 36px;
+    color: @dark-gray;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+    & span {
+      display: block;
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 27px;
+    color: @gray-color;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  &__item-header {
+    font-size: 18px;
+    line-height: 27px;
+    color: @dark-gray;
+    font-weight: 400;
+    color: @dark-gray;
+    margin-bottom: 0;
+    margin-top: 15px;
+    position: relative;
+
+    &--active {
+      color: @blue-color;
+    }
+  }
+
+  &__item-description {
+    font-size: 16px;
+    line-height: 27px;
+    color: @gray-color;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  &__item-continue {
+    font-size: 16px;
+    line-height: 27px;
+    color: @blue-color;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    position: relative;
+
+    &:hover,
+    &:focus {
+    opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 14px;
+      bottom: 2px;
+      right: -27px;
+      background: url(../img/strelka.svg) no-repeat;
+    }
+  }
+
+  &__item-image {
+    width: 150px;
+    height: 120px;
+    margin-top: 15px;
+  }
+}

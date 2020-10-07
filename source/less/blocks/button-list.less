@@ -1,0 +1,39 @@
+.button-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  &__item {
+    padding: 10px;
+  }
+
+  &__button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+
+    &-download {
+      background-color: @blue-color;
+      border: 2px solid @blue-color;
+      color: @white;
+      cursor: pointer;
+    }
+
+    &-free {
+      background-color: @white;
+      border: 2px solid @blue-color;
+      color: @blue-color;
+      cursor: pointer;
+    }
+
+    &:hover,
+    &:focus {
+    opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

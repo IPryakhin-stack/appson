@@ -1,0 +1,112 @@
+.categories {
+  width: 100%;
+  background-color: @light-gray;
+
+  &__wrapper {
+    padding: 0 15px;
+    text-align: center;
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    background-color: @white;
+    margin-top: 20px;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__header {
+    color: @dark-gray;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+
+    &--analysis::before {
+        content: "";
+        position: absolute;
+        top: -73px;
+        left: 92px;
+        width: 70px;
+        height: 70px;
+        background: @light-blue;
+        border-radius: 50%;
+      }
+
+    &--analysis::after {
+      content: "";
+      position: absolute;
+      top: -55px;
+      left: 108px;
+      width: 31px;
+      height: 31px;
+      background: url(../img/analysisIcon.svg) no-repeat;
+    }
+
+    &--design::before {
+      content: "";
+      position: absolute;
+      top: -73px;
+      left: 92px;
+      width: 70px;
+      height: 70px;
+      background: @light-purple;
+      border-radius: 50%;
+    }
+
+  &--design::after {
+    content: "";
+    position: absolute;
+    top: -56px;
+    left: 108px;
+    width: 39px;
+    height: 36px;
+    background: url(../img/designIcon.svg) no-repeat;
+    }
+
+    &--messaging::before {
+      content: "";
+      position: absolute;
+      top: -73px;
+      left: 92px;
+      width: 70px;
+      height: 70px;
+      background: @light-green;
+      border-radius: 50%;
+    }
+
+  &--messaging::after {
+    content: "";
+    position: absolute;
+    top: -56px;
+    left: 110px;
+    width: 33px;
+    height: 33px;
+    background: url(../img/messagingIcon.svg) no-repeat;
+    }
+  }
+
+  &__description {
+    color: @gray-color;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 30px;
+  }
+}

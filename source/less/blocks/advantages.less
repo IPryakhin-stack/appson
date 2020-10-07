@@ -1,0 +1,77 @@
+.advantages {
+  width: 100%;
+  background-color: @white;
+
+  &__wrapper {
+    padding: 0 15px;
+    text-align: center;
+    width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__header {
+    order: -1;
+    font-size: 32px;
+    line-height: 36px;
+    color: @dark-gray;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  &__more-info {
+    text-decoration: none;
+    color: @blue-color;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    position: relative;
+    width: 90px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 15px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 14px;
+      bottom: 5px;
+      right: -23px;
+      background: url(../img/strelka.svg) no-repeat;
+    }
+
+    &:hover,
+    &:focus {
+    opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 27px;
+    color: @gray-color;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+
+
